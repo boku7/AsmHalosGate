@@ -1,7 +1,7 @@
 # ASM HalosGate Direct System Caller
 Assembly HalosGate implementation that directly calls Windows System Calls, evades EDR User Land hooks, and displays the PPID of the explorer.exe process.
 
-![](/images/customHellsGatePoC.png)
+![](/imgs/asmHalosGatePoc.png)
 + In this screenshot the "NtQuerySystemInformation" & "NtAllocateVirtualMemory" NTDLL.DLL APIs systemcalls are discovered by using the HalosGate technique after failing to retrieve them via HellsGate technique due to EDR UserLand hooks.
 + After the systemcalls are resolved via the HellsGate and HalosGate method, they are are called directly. The code in NTDLL is never executed.
 
