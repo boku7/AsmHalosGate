@@ -126,7 +126,7 @@ halosGateUp PROC
 	ret                    ; return to caller
 halosGateUp ENDP
 
-; RCX = &NTDLL.<API> | RDX = 32bytes * Up/Down Increment 
+; RCX = &NTDLL.<API> | RDX = 32bytes * Down Increment 
 halosGateDown PROC
 	xor rsi, rsi
 	xor rdi, rdi 
