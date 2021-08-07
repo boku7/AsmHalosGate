@@ -13,7 +13,9 @@ Assembly HalosGate implementation that directly calls Windows System Calls, evad
 + Clean up the assembly functions, they are messy and could be better (Some cleanup 05/08/21)
 + ~Do better checking for the process image name so it doesnt conflict with other processes named explorer~ (Fixed 05/08/21)
 + Better error handling (Some better handling 05/08/21)
-+ Make this into a cobalt strike beacon object file
++ ~Make this into a cobalt strike beacon object file~ ( Complete! 06/08/21)
+  + See [HalosGate Processlist Cobalt Strike BOF
+](https://github.com/boku7/halosgate-ps) project! ;)
 + Build on this project for process injection / syscall PS 
 + ~Use halos gate to handle EDR hooks.~ (Implemented in this project on 05/08/21)
 
